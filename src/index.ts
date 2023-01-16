@@ -1,5 +1,6 @@
 import { FileInfo, API } from "jscodeshift";
 import postcss, { Rule } from "postcss";
+import tailwindcss from "tailwindcss";
 import syntax from "postcss-styled";
 import pxToRem from "postcss-pxtorem";
 import prettier from "prettier";
@@ -33,6 +34,20 @@ const transform = (file: FileInfo, api: API) => {
 
       if (quasi.type === "TemplateLiteral") {
         const [literal] = quasi.quasis;
+
+        const twCSS = postcss([
+          tailwindcss({
+            config: { content: [] },
+            input: "@tailwind base;\n\n@tailwind components;\n\n@tailwind utilities;",
+          }),
+        ]).process("@tailwind base;\n\n@tailwind components;\n\n@tailwind utilities;", {
+          from: "tailwind.css",
+        });
+
+        console.log(
+          "tw",
+          twCSS.root.walkDecls(decl => console.log(decl)),
+        );
 
         const { root: postCSSRoot } = postcss([
           syntax,

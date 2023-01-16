@@ -1198,7 +1198,6 @@ const TAILWIND_CLASSES = {
     "6rem": "text-8xl",
     "8rem": "text-9xl",
   },
-
   "border-opacity": {
     "0": "border-opacity-0",
     "0.05": "border-opacity-5",
@@ -1216,7 +1215,18 @@ const TAILWIND_CLASSES = {
     "0.95": "border-opacity-95",
     "1": "border-opacity-100",
   },
-
+  "box-shadow": {
+    "0001px0px0px0pxrgba(0,0,0,0.05)": "shadow-xs",
+    "0001pxrgba(0,0,0,0.1)": "shadow-sm",
+    "01px3px0rgba(0,0,0,0.1),01px2px0rgba(0,0,0,0.06)": "shadow",
+    "04px6px-1pxrgba(0,0,0,0.1),02px4px-1pxrgba(0,0,0,0.06)": "shadow-md",
+    "010px15px-3pxrgba(0,0,0,0.1),04px6px-2pxrgba(0,0,0,0.05)": "shadow-lg",
+    "020px25px-5pxrgba(0,0,0,0.1),010px10px-5pxrgba(0,0,0,0.04)": "shadow-xl",
+    "025px50px-12pxrgba(0,0,0,0.25)": "shadow-2xl",
+    "inset02px4px0rgba(0,0,0,0.06)": "shadow-inner",
+    "0003pxrgba(66,153,225,0.5)": "shadow-outline",
+    none: "shadow-none",
+  },
   background: {
     none: "bg-none",
     "0 0": "bg-none",

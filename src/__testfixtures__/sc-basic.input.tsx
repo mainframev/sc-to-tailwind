@@ -39,7 +39,7 @@ const Wrapper = styled.div`
   box-sizing: border-box;
   background: white;
   border-radius: 8px;
-  box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 1px 2px 0 rgb(0 0 0 / 0.05);
   &:after {
     display: block;
     position: absolute;
