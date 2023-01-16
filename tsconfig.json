@@ -5,16 +5,14 @@
     "target": "esnext",
     "outDir": "build",
     "module": "esnext",
+    "jsx": "react",
     "skipLibCheck": true,
+    "allowJs": true,
     "moduleResolution": "node",
     "resolveJsonModule": true,
     "noImplicitAny": false,
     "useUnknownInCatchVariables": false
   },
-  "include": [
-    "src/**/*"
-  ],
-  "exclude": [
-    "node_modules"
-  ]
+  "include": ["src/**/*", "jest.config.ts"],
+  "exclude": ["node_modules"]
 }
