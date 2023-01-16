@@ -49,9 +49,9 @@ const transform = (file: FileInfo, api: API) => {
         postCSSRoot.walkDecls(decl => {
           if (decl.parent && decl.parent.type === "rule") {
             const { selector } = decl.parent as Rule;
-            const parsedSelectors = selector.replace(/&/g, "").split(" ");
+            const parsedSelectors = selector.replace(/&|:/g, "").split(" ");
             parsedSelectors.forEach(s => {
-              classNames.push(`${s}:${getTailwindUtils(decl)}`);
+d              classNames.push(`${s}:${getTailwindUtils(decl)}`);
             });
           } else {
             classNames.push(getTailwindUtils(decl));

@@ -40,6 +40,15 @@ const Wrapper = styled.div`
   background: white;
   border-radius: 8px;
   box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
+  &:after {
+    display: block;
+    position: absolute;
+    top: 0;
+    background: red;
+    height: 1px;
+    left: 0;
+    width: 100%;
+  }
 `;
 
 const Component = () => (
