@@ -51,7 +51,7 @@ const transform = (file: FileInfo, api: API) => {
             const { selector } = decl.parent as Rule;
             const parsedSelectors = selector.replace(/&|:/g, "").split(" ");
             parsedSelectors.forEach(s => {
-d              classNames.push(`${s}:${getTailwindUtils(decl)}`);
+              classNames.push(`${s}:${getTailwindUtils(decl)}`);
             });
           } else {
             classNames.push(getTailwindUtils(decl));

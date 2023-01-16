@@ -24,7 +24,6 @@ specifiers:
   jscodeshift: ^0.14.0
   lint-staged: ^13.1.0
   postcss: ^8.4.21
-  postcss-border-shortcut: ^1.0.0
   postcss-pxtorem: ^6.0.0
   postcss-styled: ^0.34.0
   prettier: ^2.8.1
@@ -41,7 +40,6 @@ dependencies:
   debug: 4.3.4
   jscodeshift: 0.14.0_@babel+preset-env@7.20.2
   postcss: 8.4.21
-  postcss-border-shortcut: 1.0.0
   postcss-pxtorem: 6.0.0_postcss@8.4.21
   postcss-styled: 0.34.0_64375vj2stjdn6gyt55zwvoboa
   prettier: 2.8.1
@@ -5164,12 +5162,6 @@ packages:
       find-up: 4.1.0
     dev: true
 
-  /postcss-border-shortcut/1.0.0:
-    resolution: {integrity: sha512-nGTlEvP3C3dzl3BnN+wtDEm6Z51ON14LZqG9XwzbQIlJU0T4caMfDQQvN4CuQHiUdYjBuDzWFVKNGNr8mB1JkQ==}
-    dependencies:
-      postcss: 6.0.23
-    dev: false
-
   /postcss-import/14.1.0_postcss@8.4.21:
     resolution: {integrity: sha512-flwI+Vgm4SElObFVPpTIT7SU7R3qk2L7PyduMcokiaVKuWv9d/U+Gm/QAd8NDLuykTWTkcrjOeD2Pp1rMeBTGw==}
     engines: {node: '>=10.0.0'}
@@ -5267,15 +5259,6 @@ packages:
 
   /postcss-value-parser/4.2.0:
     resolution: {integrity: sha512-1NNCs6uurfkVbeXG4S8JFT9t19m45ICnif8zWLd5oPSZ50QnwMfK+H3jv408d4jw/7Bttv5axS5IiHoLaVNHeQ==}
-
-  /postcss/6.0.23:
-    resolution: {integrity: sha512-soOk1h6J3VMTZtVeVpv15/Hpdl2cBLX3CAw4TAbkpTJiNPk9YP/zWcD1ND+xEtvyuuvKzbxliTOIyvkSeSJ6ag==}
-    engines: {node: '>=4.0.0'}
-    dependencies:
-      chalk: 2.4.2
-      source-map: 0.6.1
-      supports-color: 5.5.0
-    dev: false
 
   /postcss/8.4.21:
     resolution: {integrity: sha512-tP7u/Sn/dVxK2NnruI4H9BG+x+Wxz6oeZ1cJ8P6G/PZY0IKk4k/63TDsQf2kQq3+qoJeLm2kIBUNlZe3zgb4Zg==}
