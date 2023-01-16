@@ -17,7 +17,6 @@
     "debug": "^4.3.4",
     "jscodeshift": "^0.14.0",
     "postcss": "^8.4.21",
-    "postcss-border-shortcut": "^1.0.0",
     "postcss-pxtorem": "^6.0.0",
     "postcss-styled": "^0.34.0",
     "prettier": "^2.8.1",
